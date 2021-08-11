@@ -6,6 +6,18 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-<img src="images/menu.png" style="width: 100%">
+<img src="images/menu.png" class="menu-full" style="width: 100%">
+<img src="images/menu_a4_front.png" class="menu-a4" style="margin-bottom: 8px; width: 100%">
+<img src="images/menu_a4_back.png" class="menu-a4" style="width: 100%">
+<style type="text/css">
+    @media (max-width: 768px){
+        .menu-full {display: none}
+        .menu-a4 {display: block}
+    }
+    @media (min-width: 768px){
+        .menu-full {display: block}
+        .menu-a4 {display: none}
+    }
+</style>
 </body>
 </html>
